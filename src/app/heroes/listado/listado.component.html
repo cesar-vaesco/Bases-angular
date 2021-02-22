@@ -1,15 +1,21 @@
 <h2>Listado de Héroes</h2>
 <br>
-<h3>listar heroes con la directiva estructural *ngFor de Angular</h3>
-<p>'*ngFor="let heroe of heroes"'</p>
+
 <button (click)="borrandoHeroe()">Heroe borrado</button>
 <!-- <dl *ngIf="heroeBorrado.length > 0"> -->
 <!-- <dl *ngIf="heroeBorrado !== ''"> -->
-<dl *ngIf="heroeBorrado">
+<dl *ngIf="heroeBorrado;  else noBorrado">
     <td>Heroe borrado</td>
     <dd>{{heroeBorrado}}</dd>
 </dl>
+<ng-template #noBorrado>
+    <h3>No ha borrado nada...</h3>
+</ng-template>
+
 <br>
 <ul *ngFor="let heroe of heroes; let i = index ">
     <li>{{i + 1}} - {{heroe}}</li>
 </ul>
+<br>
+
+<a class="btn" href="http://localhost:4200/"><button>Refresh....</button></a>
