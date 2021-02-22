@@ -2,10 +2,23 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-listado',
-  templateUrl: './listado.component.html'
+  templateUrl: './listado.component.html',
 })
-export class ListadoComponent  {
+export class ListadoComponent {
 
+  heroes: string[] = [
+    'Spiderman',
+    'Ironman',
+    'Thor',
+    'Hulk',
+    'Capitan América',
+  ];
+
+  heroeBorrado: string = '';
+
+  borrandoHeroe(): any {
+    this.heroeBorrado = this.heroes.shift() || '';
+  }
 
 
 }

@@ -1,1 +1,23 @@
-<p>listado</p>
+<h2>Listado de Héroes</h2>
+<h3>Listar heroes de forma tradicional</h3>
+<ul>
+    <li>heroes[0]: {{heroes[0]}}</li>
+    <li>heroes[1]: {{heroes[1]}}</li>
+</ul>
+
+<br>
+<h3>listar heroes con la directiva estructural *ngFor de Angular</h3>
+<p>'*ngFor="let heroe of heroes"'</p>
+<dl>
+    <td>Heroe borrado</td>
+    <dd>{{heroeBorrado}}</dd>
+</dl>
+
+<ul *ngFor="let heroe of heroes; let i = index ">
+    <li>{{i + 1}} - {{heroe}}</li>
+</ul>
+
+
+
+<br>
+<button (click)="borrandoHeroe()">Borrando heroe</button>
