@@ -6,7 +6,13 @@
 
 html, body {
 
-  background: white;
+  /* Dar formato a la imagen */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100%; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: linear-gradient(red, yellow);
   margin: 20px;
   color: #3e4144;
   -webkit-font-smoothing: antialiased;
@@ -38,4 +44,33 @@ button:focus{
 
 .p-1 {
   padding: 1px;
+}
+
+.row{
+  display: flex;
+}
+
+.col{
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+input{
+  display: block;
+  margin: 5px;
+}
+
+.personajes{
+  color:blue;
+}
+
+.agregar{
+  color: green
+}
+
+.rainbow-text {
+
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
