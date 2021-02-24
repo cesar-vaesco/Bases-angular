@@ -1,16 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Personaje {
+  nombre: string;
+  poder: number;
+}
+
 @Component({
   selector: 'app-main-page',
-  templateUrl: './main-page.component.html'
+  templateUrl: './main-page.component.html',
 })
-export class MainPageComponent  {
+export class MainPageComponent {
+  nuevo: Personaje = {
+    nombre: 'Trunks',
+    poder: 15000,
+  };
 
+  cambiarNombre(event: any) {
+    console.log(event.target.value);
+  }
 
-
-  agregar( ){
-
-    console.log('Esta es una prueba...!!!!');
-
+  agregar() {
+    console.log(this.nuevo);
   }
 }
