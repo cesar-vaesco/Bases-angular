@@ -4,8 +4,8 @@
   font-weight: 200;
 }
 
-html, body {
-
+html,
+body {
   /* Dar formato a la imagen */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 100%; /* You must set a specified height */
@@ -17,7 +17,6 @@ html, body {
   color: #3e4144;
   -webkit-font-smoothing: antialiased;
 }
-
 
 dd {
   font-weight: bold;
@@ -38,7 +37,7 @@ button:hover {
   background-color: #3e4144;
 }
 
-button:focus{
+button:focus {
   outline: none;
 }
 
@@ -46,45 +45,59 @@ button:focus{
   padding: 1px;
 }
 
-.row{
+.row {
   display: flex;
 }
 
-.col{
+.col {
   flex-grow: 1;
   margin-right: 10px;
 }
 
-input{
-  color:rgb(22, 15, 7);
+input {
+  color: rgb(22, 15, 7);
   display: block;
   margin: 5px;
 }
 
-.personajes{
-  color:blue;
+.personajes {
+  color: blue;
   font-weight: bold;
 }
 
-.agregar{
+.agregar {
   color: green;
   font-weight: bold;
 }
 
 .rainbow-text {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, rgb(30, 219, 46));
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    rgb(30, 219, 46)
+  );
   font-weight: bold;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 100px;
 }
 
-input{
+input {
   border-radius: 5px;
   border: 5px solid rgb(9, 10, 10);
 }
 
-li{
+li {
   color: black;
+  font-weight: bold;
+}
+
+small {
+  color: yellow;
   font-weight: bold;
 }

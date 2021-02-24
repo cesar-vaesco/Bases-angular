@@ -37,3 +37,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #### ngSubmit
 
 Controla el envío de un formulario
+
+
+#### Two-way binding
+
+Two-way binding (enlace bidireccional) proporciona a los componentes de la aplicación una forma de compartir datos. Se utiliza el enlace bidireccional para escuchar eventos y actualizar los valores simultáneamente entre los componentes principal y secundario.
+
+
+#### ngModel
+
+Sirve para enlazar datos definidos en un componente con un campo de un formulario que se quieren mostrar en la vista (template - html) del componente
