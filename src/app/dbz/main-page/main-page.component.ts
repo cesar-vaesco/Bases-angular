@@ -8,9 +8,9 @@ export class MainPageComponent  {
 
 
 
-  agregar( event: any ){
-    event.preventDefault();
-    console.log('Hey....!!!!');
-    console.log(event);
+  agregar( ){
+
+    console.log('Esta es una prueba...!!!!');
+
   }
 }

@@ -33,3 +33,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Para `crear` un módulo de forma autómatica con atajo de comando **ng g m nombre_modulo**
 **En caso de que no exista un directorio o no se especifique al `crear` el módulo angular va crearlo con su respectiva carpeta/fichero**
 * **Debemos de asegurarnos estar en la raíz del proyecto en la línea de comando al momento de generar nuestros módulos**
+
+#### ngSubmit
+
+Controla el envío de un formulario
