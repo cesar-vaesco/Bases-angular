@@ -46,4 +46,4 @@ Two-way binding (enlace bidireccional) proporciona a los componentes de la aplic
 
 #### ngModel
 
-Sirve para enlazar datos definidos en un componente con un campo de un formulario que se quieren mostrar en la vista (template - html) del componente
+Sirve para enlazar datos definidos en un componente (archivo.component.ts) con un campo de un formulario que se quieren mostrar en la vista (template - html) del componente
