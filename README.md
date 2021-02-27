@@ -47,3 +47,13 @@ Two-way binding (enlace bidireccional) proporciona a los componentes de la aplic
 #### ngModel
 
 Sirve para enlazar datos definidos en un componente (archivo.component.ts) con un campo de un formulario que se quieren mostrar en la vista (template - html) del componente
+
+
+### Compatir datos entre componentes padres e hijos [ver detalle documentación...](https://angular.io/guide/inputs-outputs)
+
+Un patrón común en Angular es compartir datos entre un componente principal y uno o más componentes secundarios. Puede implementar este patrón mediante las @Input()y @Output()directivas .
+
+#### @Input
+
+@Input() permite que un componente principal actualice los datos del componente secundario.
+El @Input()decorador en un componente secundario o directiva significa que la propiedad puede recibir su valor de su componente principal.
