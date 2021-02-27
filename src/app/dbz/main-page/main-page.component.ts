@@ -18,19 +18,9 @@ export class MainPageComponent {
       poder: 14500,
     },
   ];
-  nuevo: Personaje = {
-    nombre: '',
-    poder: 0,
-  };
 
-  agregar() {
-    if (this.nuevo.nombre.trim().length == 0) {
-      return;
-    }
-    console.log(this.nuevo);
-    // Insertar personaje en el arreglo
-    this.personajes.push(this.nuevo);
-    // Limpiar los input del formulario
-    this.nuevo = { nombre: '', poder: 0 };
+  nuevo: Personaje = {
+    nombre:'Maestro Roshi',
+    poder: 1500
   }
 }
