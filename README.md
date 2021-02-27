@@ -51,9 +51,14 @@ Sirve para enlazar datos definidos en un componente (archivo.component.ts) con u
 
 ### Compatir datos entre componentes padres e hijos [ver detalle documentación...](https://angular.io/guide/inputs-outputs)
 
-Un patrón común en Angular es compartir datos entre un componente principal y uno o más componentes secundarios. Puede implementar este patrón mediante las @Input()y @Output()directivas .
+Un patrón común en Angular es compartir datos entre un componente principal y uno o más componentes secundarios. Puede implementar este patrón mediante las directivas @Input()y @Output().
 
 #### @Input
 
 @Input() permite que un componente principal actualice los datos del componente secundario.
 El @Input()decorador en un componente secundario o directiva significa que la propiedad puede recibir su valor de su componente principal.
+
+
+#### @Output
+
+@Output() permite al componente hijo comunicarse con el componente padre a través de eventos y para eso angular utiliza la clase EventEmitter
