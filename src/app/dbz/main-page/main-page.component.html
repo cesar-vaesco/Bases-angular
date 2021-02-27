@@ -1,15 +1,9 @@
 <h1 class="rainbow-text">Dragon Ball Z!</h1>
 <hr>
 <div class="row">
-    <div class="col">
-        <h3 class="personajes">Pesonajes</h3>
-        <hr>
-        <ul>
-            <li *ngFor="let personaje of personajes">
-            {{ personaje.nombre }} - {{personaje.poder | number}}
-        </li>
 
-        </ul>
+    <div class="col">
+        <app-personajes></app-personajes>
     </div>
 
     <div class="col">
