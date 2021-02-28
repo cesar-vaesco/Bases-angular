@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interface.ts';
+import { DbzService } from '../services/dbz.service';
 
 
 
@@ -29,5 +30,8 @@ export class MainPageComponent {
     // console.log(argumento);
     //Agregando al personaje al arreglo de personajes
     this.personajes.push(argumento);
+
   }
+
+  constructor( private dbzService: DbzService){}
 }

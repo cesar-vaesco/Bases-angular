@@ -62,3 +62,16 @@ El @Input()decorador en un componente secundario o directiva significa que la pr
 #### @Output
 
 @Output() permite al componente hijo comunicarse con el componente padre a través de eventos y para eso angular utiliza la clase EventEmitter
+
+
+### Servicios
+
+Un servicio es un proveedor de datos, que mantiene lógica de acceso a ellos y operativa relacionada con el negocio y las cosas que se hacen con los datos dentro de una aplicación. Los servicios serán consumidos por los componentes, que delegarán en ellos la responsabilidad de acceder a la información y la realización de operaciones con los datos.
+
+Al crear un servicio se requiere:
+
+    - Agregarlo a un módulo y así los componentes de ese módulo podran hacer usos del servicio. El registro del service se realiza en providers del módulo
+
+    - El servicio creado debe de contar con el decorador @Injectable para que angular pueda inyectarlo (inyección de depenedencias)
+
+    - El servicio debe de contar con la palabra reservada exportk
