@@ -1,5 +1,9 @@
 # Bases
 
+## Despliegue de aplicación
+
+App desplegada en netlify -> [link](https://elegant-visvesvaraya-63d82a.netlify.app/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
 ## Development server
@@ -9,6 +13,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+Ejecute `ng build` para construir el proyecto. Los artefactos de construcción se almacenarán en el directorio `dist /`. Utilice la marca `--prod` para una compilación de producción.
+
+Para subir el proyecto de producción, se tomo la carpeta bases que se encuentra dentro de la carpeta `dist` (creada al construir el proyecto)
 
 ## Further help
 
@@ -74,4 +82,4 @@ Al crear un servicio se requiere:
 
     - El servicio creado debe de contar con el decorador @Injectable para que angular pueda inyectarlo (inyección de depenedencias)
 
-    - El servicio debe de contar con la palabra reservada exportk
+    - El servicio debe de contar con la palabra reservada export
